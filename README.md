@@ -1,5 +1,7 @@
 There is an issue with Prisma which causes concurrent usages of `findUnique()` to return null values if the calls specify the uniqueWhereInput keys in different orders
 
+Tracked Issue: [Prisma Issue #16267](https://github.com/prisma/prisma/issues/16267)
+
 - Only happens with `findUnique` or `findUniqueOrThrow`
 - Only when multiple `findUnique` calls are made concurrently and Prisma runs them in a batched query.
 - The uniqueWhereInput needs to be different for the problem to occur
