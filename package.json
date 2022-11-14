@@ -1,0 +1,25 @@
+{
+  "name": "prisma-issue-concurrent-findunique-keyorder-matters",
+  "version": "1.0.0",
+  "description": "> Test case for https://github.com/prisma/prisma/issues/14954",
+  "main": "index.js",
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
+    "prisma": "^4.6.1"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "postinstall": "prisma generate",
+    "prisma": "prisma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloojeans/prisma-issue-concurrent-findUnique-keyorder-matters.git"
+  },
+  "author": "Matt Jeanes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bloojeans/prisma-issue-concurrent-findUnique-keyorder-matters/issues"
+  },
+  "homepage": "https://github.com/bloojeans/prisma-issue-concurrent-findUnique-keyorder-matters#readme"
+}
